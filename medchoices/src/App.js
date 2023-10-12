@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'; // Import the CSS file
+import './App.css'; 
 import logo from './image/logo.PNG';
 
 class App extends Component {
@@ -35,10 +35,10 @@ class App extends Component {
           <img src={logo} alt="logo" />
         </div>
         <div className="registration-form">
-          <h2>Register</h2>
+          <h2 style={{ color: '#00a2ff' }}>Register</h2>
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <label htmlFor="nuid">NUID:</label>
+              <label htmlFor="nuid" style={{ color: '#00a2ff' }}>NUID:</label>
               <input
                 type="text"
                 id="nuid"
@@ -48,7 +48,7 @@ class App extends Component {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="fullName">Full Name:</label>
+              <label htmlFor="fullName" style={{ color: '#00a2ff' }}>Full Name:</label>
               <input
                 type="text"
                 id="fullName"
@@ -58,7 +58,7 @@ class App extends Component {
               />
             </div>
             <div className="form-group">
-              <label>
+              <label style={{ color: '#00a2ff' }}>
                 <input
                   type="checkbox"
                   name="agreeTerms"
@@ -69,7 +69,7 @@ class App extends Component {
               </label>
             </div>
             <div className="form-group">
-              <label>
+              <label style={{ color: '#00a2ff' }}>
                 <input
                   type="checkbox"
                   name="rememberMe"
@@ -79,12 +79,16 @@ class App extends Component {
                 Remember me
               </label>
             </div>
-            <button type="submit">Register</button>
+            <div className="centered-button">
+              <button type="submit" style={{ color: '#00a2ff' }}>Register</button>
+            </div>
+            <div className="button-spacing">
+              <button className="about-us-button" onClick={() => window.location.href = "/about-us"} style={{ color: '#00a2ff' }}>About Us</button>
+            </div>
+            <div className="button-spacing">
+              <button className="login-button" onClick={() => window.location.href = "/login"} style={{ color: '#00a2ff' }}>Already have an account? Login here</button>
+            </div>
           </form>
-          <div className="buttons">
-            <button className="login-button" onClick={() => window.location.href = "/login"}>Already have an account? Login here</button>
-            <button className="about-us-button" onClick={() => window.location.href = "/about-us"}>About Us</button>
-          </div>
         </div>
       </div>
     );
