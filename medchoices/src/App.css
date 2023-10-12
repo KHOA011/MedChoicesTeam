@@ -20,3 +20,67 @@
   align-items: center;
 }
 
+/* App.css */
+.registration-container {
+  display: flex;
+  height: 100vh;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Replace with the desired background color */
+}
+
+.registration-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00a2ff; /* Baby blue color */
+}
+
+.registration-form button, .registration-form label {
+  color: #00a2ff; /* Baby blue color */
+}
+
+
+/* App.css */
+.registration-container {
+  display: flex;
+  height: 100vh;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0; /* Replace with the desired background color */
+}
+
+.registration-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00a2ff; /* Baby blue color */
+}
+
+.registration-form button, .registration-form label {
+  color: #00a2ff; /* Baby blue color */
+}
+
+.centered-button {
+  margin-top: 20px; /* Adjust the margin as needed */
+  text-align: center;
+}
+
+.button-spacing {
+  margin-top: 10px; /* Adjust the spacing between buttons as needed */
+}
+
