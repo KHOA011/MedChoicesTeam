@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'; 
+import './App.css';
 import logo from './image/logo.PNG';
 
 class App extends Component {
@@ -45,6 +45,7 @@ class App extends Component {
                 name="nuid"
                 value={this.state.nuid}
                 onChange={this.handleInputChange}
+                style={{ width: '100%' }}
               />
             </div>
             <div className="form-group">
@@ -55,6 +56,7 @@ class App extends Component {
                 name="fullName"
                 value={this.state.fullName}
                 onChange={this.handleInputChange}
+                style={{ width: '100%' }}
               />
             </div>
             <div className="form-group">
@@ -80,15 +82,15 @@ class App extends Component {
               </label>
             </div>
             <div className="centered-button">
-              <button type="submit" style={{ color: '#00a2ff' }}>Register</button>
-            </div>
-            <div className="button-spacing">
-              <button className="about-us-button" onClick={() => window.location.href = "/about-us"} style={{ color: '#00a2ff' }}>About Us</button>
-            </div>
-            <div className="button-spacing">
-              <button className="login-button" onClick={() => window.location.href = "/login"} style={{ color: '#00a2ff' }}>Already have an account? Login here</button>
+              <button type="submit" style={{ color: '#00a2ff', marginRight: '32px' }}>Register</button>
+              <a className="about-us-link" href="/about-us" style={{ color: '#00a2ff' }}>About Us</a>
             </div>
           </form>
+          <div className="button-spacing" style={{ marginTop: '30px' }}>
+            <span style={{ color: '#00a2ff', display: 'block' }}>
+              Already have an account? <a href="/login" style={{ textDecoration: 'underline' }}>Login here</a>
+            </span>
+          </div>
         </div>
       </div>
     );
