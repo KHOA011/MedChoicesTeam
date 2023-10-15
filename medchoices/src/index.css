@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.survey-button {
+  margin: 5px; /* Adjust the margin as needed */
+}
+
+/* Set the background color for the entire form container */
+.survey-container {
+  background: linear-gradient(
+    to bottom,
+    #0077b6, 
+    #0c6aa4, 
+    #105f91,
+    #13527f,
+    #15476d,
+    #173b5a,
+    #183147,
+    #1a2535,
+    #1c1a23,
+    #1e0e11 
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Apply styles to the survey form within the container */
+.survey-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Style the "Submit Survey" and "Go Back" buttons */
+button.submit-button {
+  background-color: #50c5b7; /* Button background color */
+  border: 1px solid #005282; /* Button border color */
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin: 20px 0; /* Adjust margin as needed */
+  padding: 10px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  cursor: pointer;
+}
+
+/* Style the "Go Back" button as a hyperlink-style button */
+button.go-back-link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: #50c5b7; /* Link color */
+  text-decoration: underline; /* Add an underline to the link */
+  cursor: pointer;
+}
+
+/* Change button style on hover */
+button.go-back-link:hover {
+  color: #0077b6; /* Hover text color for the link */
+  text-decoration: none; /* Remove underline on hover */
+}
+

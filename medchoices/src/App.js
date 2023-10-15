@@ -1,15 +1,15 @@
-import logo from './image/meo.png';
+import React, { Component } from 'react';
 import './App.css';
+import AppRouter from './AppRouter'; // Import the AppRouter component
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> Hello Moi nguoi</h1>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <AppRouter />
+      </div>
+    );
+  }
 }
 
 export default App;
