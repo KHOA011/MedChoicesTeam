@@ -59,38 +59,45 @@ const Survey = () => {
       alert('Please enter a valid 9-digit phone number.');
       return;
     }
-  
+    // Create an object with user responses
+    const userResponse = {
+      age,
+      email,
+      phone,
+      surveyResponses: responses,
+    };
 
-    // IMPORTANT : THIS IS CHECKING IF WE GOT THE CORRECT INFORMATION
-    // THIS SHOULD PASS THE INFORMATION TO THE SUMMARY PAGE NOT DOWNLOAD IT !!!
+    // Redirect to the summary page and pass the user response data
+    navigate('/summary', { state: { userResponse, questions } });
+  };
 
-
-    // const userResponse = {
-    //   age,
-    //   email,
-    //   phone,
-    //   surveyResponses: responses,
-    // };
-
-    // Convert the response object to a JSON string
-    // const responseJson = JSON.stringify(userResponse);
-  
-    // Write the response to a text file
-    // const blob = new Blob([responseJson], { type: 'text/plain' });
-    // const url = URL.createObjectURL(blob);
-    // const a = document.createElement('a');
-    // a.style.display = 'none';
-    // a.href = url;
-    // a.download = 'user_response.txt';
-    // document.body.appendChild(a);
-    // a.click();
-    // window.URL.revokeObjectURL(url);
-  
-    // Redirect to the login page
-    navigate('/');
+  const surveyFormStyle = {
+    backgroundColor: '#fff',
+    maxWidth: '500px',
+    margin: '50px auto',
+    padding: '30px 20px',
+    boxShadow: '2px 5px 10px rgba(0, 0, 0, 0.5)',
   };
   
-
+  const formControlStyle = {
+    textAlign: 'left',
+    marginBottom: '25px',
+  };
+  
+  const labelStyle = {
+    display: 'block',
+    marginBottom: '10px',
+  };
+  
+  const inputStyle = {
+    border: '1px solid #777',
+    borderRadius: '2px',
+    fontFamily: 'inherit',
+    padding: '10px',
+    display: 'block',
+    width: '95%',
+  };
+  
   return (
     <div className="survey-container">
       <form id="form" style={surveyFormStyle}>
@@ -161,32 +168,4 @@ const Survey = () => {
   );
 };
 
-const surveyFormStyle = {
-  backgroundColor: '#fff',
-  maxWidth: '500px',
-  margin: '50px auto',
-  padding: '30px 20px',
-  boxShadow: '2px 5px 10px rgba(0, 0, 0, 0.5)',
-};
-
-const formControlStyle = {
-  textAlign: 'left',
-  marginBottom: '25px',
-};
-
-const labelStyle = {
-  display: 'block',
-  marginBottom: '10px',
-};
-
-const inputStyle = {
-  border: '1px solid #777',
-  borderRadius: '2px',
-  fontFamily: 'inherit',
-  padding: '10px',
-  display: 'block',
-  width: '95%',
-};
 export default Survey;
-
-
