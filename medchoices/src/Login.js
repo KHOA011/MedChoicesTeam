@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './image/logo.png';
+import logo from './image/logo.PNG';
 
 //TODO : IMPORT THIS LIB
 import { Link } from 'react-router-dom';
