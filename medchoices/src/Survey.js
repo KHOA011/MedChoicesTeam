@@ -40,7 +40,7 @@ const Survey = () => {
     };
 
     const goBack = () => {
-        navigate(-1); // Navigate back to the previous page
+        navigate('/homepage'); // Navigate back to the previous page
     };
 
     const handleSubmit = () => {
@@ -58,7 +58,7 @@ const Survey = () => {
 
         // Validation for phone
         if (!/^\d{10}$/.test(phone)) {
-            alert("Please enter a valid 9-digit phone number.");
+            alert("Please enter a valid 10-digit phone number.");
             return;
         }
         // Create an object with user responses

@@ -20,21 +20,43 @@ code {
 .survey-container {
   background: linear-gradient(
     to bottom,
-    #0077b6, 
-    #0c6aa4, 
-    #105f91,
-    #13527f,
-    #15476d,
-    #173b5a,
-    #183147,
-    #1a2535,
-    #1c1a23,
-    #1e0e11 
+    #b3e0ff, /* Lightest blue */
+    #a3d4fc,
+    #92c8f8,
+    #82bcf4,
+    #71b0f0,
+    #61a4ec,
+    #5198e8,
+    #428ce4,
+    #3280e0,
+    #2274dc,
+    #1168d8,
+    #0c5ecf,
+    #0855c6,
+    #054cbd,
+    #0342b4,
+    #0239ab,
+    #012fa2,
+    #002598,
+    #001c8f,
+    #001285,
+    #00097c,
+    #000073 /* Darkest blue */
   );
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
+
+
+.about-us-content {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+  border-radius: 10px;
+}
+
+
 
 /* Apply styles to the survey form within the container */
 .survey-form {
@@ -59,6 +81,70 @@ button.submit-button {
   color: white; /* Text color */
   cursor: pointer;
 }
+
+.about-us-container {
+  background: linear-gradient(
+    to bottom,
+    #b3e0ff, /* Light blue */
+    #a3d4fc,
+    #92c8f8,
+    #82bcf4,
+    #71b0f0,
+    #61a4ec,
+    #5198e8,
+    #428ce4,
+    #3280e0,
+    #2274dc
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.about-us-content {
+  max-width: 800px; /* Limit content width */
+  padding: 20px; /* Add padding for better spacing */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners for the content */
+  text-align: center; /* Center text horizontally */
+}
+
+.about-us-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  text-align: left; /* Align body text to the left */
+}
+
+
+/* Style for the headings */
+.about-us-heading {
+  font-style: italic;
+}
+
+.about-us-heading {
+  font-style: italic; /* Italicize the headings */
+  text-align: center; /* Center-align the headings */
+}
+
+
+
+.go-back-link {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00a2ff; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+}
+
+.go-back-link:hover {
+  background-color: #fff; /* Hover color */
+}
+
+
 
 /* Style the "Go Back" button as a hyperlink-style button */
 button.go-back-link {
@@ -144,5 +230,3 @@ details p {
   margin: 0 0 1rem;
   padding-top: 1rem;
 }
-
-
