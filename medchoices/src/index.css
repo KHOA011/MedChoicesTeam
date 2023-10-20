@@ -11,3 +11,248 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< Updated upstream
+=======
+
+.survey-button {
+  margin: 5px; /* Adjust the margin as needed */
+}
+
+/* Set the background color for the entire form container */
+.survey-container {
+  background: linear-gradient(
+    to bottom,
+    #b3e0ff, /* Lightest blue */
+    #a3d4fc,
+    #92c8f8,
+    #82bcf4,
+    #71b0f0,
+    #61a4ec,
+    #5198e8,
+    #428ce4,
+    #3280e0,
+    #2274dc,
+    #1168d8,
+    #0c5ecf,
+    #0855c6,
+    #054cbd,
+    #0342b4,
+    #0239ab,
+    #012fa2,
+    #002598,
+    #001c8f,
+    #001285,
+    #00097c,
+    #000073 /* Darkest blue */
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+.about-us-content {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+  border-radius: 10px;
+}
+
+
+
+/* Apply styles to the survey form within the container */
+.survey-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Style the "Submit Survey" and "Go Back" buttons */
+button.submit-button {
+  background-color: #50c5b7; /* Button background color */
+  border: 1px solid #005282; /* Button border color */
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 21px;
+  display: block;
+  width: 100%;
+  margin: 20px 0; /* Adjust margin as needed */
+  padding: 10px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  cursor: pointer;
+}
+
+.about-us-container {
+  background: linear-gradient(
+    to bottom,
+    #b3e0ff, /* Light blue */
+    #a3d4fc,
+    #92c8f8,
+    #82bcf4,
+    #71b0f0,
+    #61a4ec,
+    #5198e8,
+    #428ce4,
+    #3280e0,
+    #2274dc
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.about-us-content {
+  max-width: 800px; /* Limit content width */
+  padding: 20px; /* Add padding for better spacing */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners for the content */
+  text-align: center; /* Center text horizontally */
+}
+
+.about-us-text {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+  text-align: left; /* Align body text to the left */
+}
+
+
+/* Style for the headings */
+.about-us-heading {
+  font-style: italic;
+}
+
+.about-us-heading {
+  font-style: italic; /* Italicize the headings */
+  text-align: center; /* Center-align the headings */
+}
+
+
+
+.go-back-link {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00a2ff; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+}
+
+.go-back-link:hover {
+  background-color: #fff; /* Hover color */
+}
+
+
+
+/* Style the "Go Back" button as a hyperlink-style button */
+button.go-back-link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: #50c5b7; /* Link color */
+  text-decoration: underline; /* Add an underline to the link */
+  cursor: pointer;
+}
+
+/* Change button style on hover */
+button.go-back-link:hover {
+  color: #0077b6; /* Hover text color for the link */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Your CSS styles go here */
+section {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+
+details summary {
+  outline: 0;
+}
+
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+/* styles.css (or your preferred CSS file) */
+
+/* Sidebar Styles */
+.sidebar {
+  flex: 0 0 200px; /* Set a fixed width for the sidebar */
+  background-color: #333; /* Sidebar background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.sidebar-link {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Content Styles */
+.content {
+  flex: 1; /* Allow content to grow and fill the available space */
+  padding: 20px; /* Add some padding to the content */
+}
+
+>>>>>>> Stashed changes

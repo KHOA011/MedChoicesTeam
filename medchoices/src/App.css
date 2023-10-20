@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +37,18 @@
     transform: rotate(360deg);
   }
 }
+=======
+.button-spacing {
+  margin-top: 10px; /* Adjust the spacing between buttons as needed */
+}
+
+.sidebar {
+  background-color: #00a2ff;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+}
+
+
+
+>>>>>>> Stashed changes
