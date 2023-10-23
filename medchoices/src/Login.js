@@ -44,7 +44,7 @@ const Login = () => {
     }
 
     // After handling the registration and validation, navigate to the homepage
-    navigate('/homepage', { state: { nuid: state.nuid, fullName: state.fullName } });
+    navigate('/homepage', { state: { fullName: state.fullName ,nuid: state.nuid,} });
 
   };
 

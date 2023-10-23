@@ -5,6 +5,8 @@ import AboutUs from './AboutUs';
 import Survey from './Survey';
 import SummaryPage from './Summary';
 import HomePage from './Homepage';
+import FAQs from './Faqs';
+import Fact from './Fact';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -14,6 +16,8 @@ const AppRouter = () => (
       <Route path="/survey/:number" element={<Survey />} />
       <Route path="/summary" element={<SummaryPage />} />
       <Route path="/homepage" element={<HomePage />} />
+      <Route path="/faqs" element={<FAQs />} />
+      <Route path="/fact" element={<Fact />} />
     </Routes>
   </BrowserRouter>
 );

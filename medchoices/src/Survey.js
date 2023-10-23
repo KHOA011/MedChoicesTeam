@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 const Survey = () => {
     const { number } = useParams();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const [questions, setQuestions] = useState([]);
     const [responses, setResponses] = useState(Array(questions.length).fill(0));
     const [age, setAge] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
+    const { fullName, nuid } = location.state || {};
+    
 
     useEffect(() => {
         async function fetchQuestions() {
@@ -67,6 +70,8 @@ const Survey = () => {
             email,
             phone,
             surveyResponses: responses,
+            fullName,
+            nuid,
         };
 
         // Redirect to the summary page and pass the user response data

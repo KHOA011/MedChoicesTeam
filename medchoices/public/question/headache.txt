@@ -1,0 +1,10 @@
+On average, how often do you experience headaches in a month?
+How would you rate the intensity of your most severe headache in the past month?
+How long does a typical headache episode last for you?
+How would you describe the location of your headaches? (1 being mild, 10 being severe)
+To what extent do your headaches interfere with your daily activities? (1 being minimal, 10 being highly disruptive)
+How would you rate the effectiveness of over-the-counter pain relievers in managing your headaches? (1 being not effective, 10 being highly effective)
+Do you experience any accompanying symptoms during a headache, such as nausea, sensitivity to light, or sound? Please rate their severity. (1 being mild, 10 being severe)
+How would you rate the impact of stress on your headaches? (1 being no impact, 10 being significant impact)
+Are there specific triggers that you've identified for your headaches (e.g., certain foods, stress, lack of sleep)? Please rate their influence. (1 being no influence, 10 being strong influence)
+How satisfied are you with your current headache management or treatment plan? (1 being not satisfied at all, 10 being very satisfied)

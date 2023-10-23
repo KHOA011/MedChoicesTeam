@@ -3,9 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const Summarypage = () => {
     const location = useLocation();
-    const { userResponse, questions, number } = location.state || {};
     const navigate = useNavigate();
-
+    const { userResponse, questions, number } = location.state || {};
     const [selectedDoctor, setSelectedDoctor] = useState("");
     const [doctorInfo, setDoctorInfo] = useState("");
     const [doctorList, setDoctorList] = useState([]);
@@ -61,7 +60,9 @@ const Summarypage = () => {
 
     const handleDownloadSummary = () => {
         // Create the text content for the summary
-        const summaryText = `Summary for Survey ${number}\n\nUser Information:\nAge: ${
+        const summaryText = `Summary for Survey ${number}\n\nUser Information:\nNUID: ${
+            userResponse.nuid
+          }\nFull Name: ${userResponse.fullName}\nAge: ${
             userResponse.age
         }\nEmail: ${userResponse.email}\nPhone Number: ${
             userResponse.phone
