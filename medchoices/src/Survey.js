@@ -43,7 +43,7 @@ const Survey = () => {
     };
 
     const goBack = () => {
-        navigate('/homepage'); // Navigate back to the previous page
+        navigate('/homepage');
     };
 
     const handleSubmit = () => {

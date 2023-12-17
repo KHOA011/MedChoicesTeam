@@ -209,7 +209,7 @@ const Summarypage = () => {
                             time.
                         </p>
                         <button
-                            onClick={() => navigate("/")}
+                            onClick={() => navigate("/homepage")}
                             className="submit-button"
                         >
                             Confirm

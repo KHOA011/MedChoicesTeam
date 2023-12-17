@@ -8,3 +8,4 @@ How would you rate the amount of swelling in your face or jaw due to dental issu
 Rate the severity of your tooth mobility or looseness on a scale of 1 to 10, with 1 indicating no mobility and 10 indicating significant mobility.
 On a scale of 1 to 10, how would you rate the frequency and severity of headaches or earaches related to your dental condition?
 Please rate the level of discomfort you experience from sores or ulcers in your mouth, with 1 being not uncomfortable and 10 being extremely uncomfortable.
+Please rate your satisfaction with this survey

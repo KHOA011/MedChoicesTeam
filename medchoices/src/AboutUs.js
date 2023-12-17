@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from './Sidebar';
 const AboutUs = () => {
   const navigate = useNavigate();
 
@@ -11,7 +10,6 @@ const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className="about-us-content">
-        <Sidebar/>
         <h2>About Us: <span style={{ color: 'orange' }}>The Vietnamese Gang</span></h2>
         <div className="about-us-text">
           <p>

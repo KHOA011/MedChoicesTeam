@@ -8,3 +8,4 @@ Do you experience any accompanying symptoms during a headache, such as nausea, s
 How would you rate the impact of stress on your headaches? (1 being no impact, 10 being significant impact)
 Are there specific triggers that you've identified for your headaches (e.g., certain foods, stress, lack of sleep)? Please rate their influence. (1 being no influence, 10 being strong influence)
 How satisfied are you with your current headache management or treatment plan? (1 being not satisfied at all, 10 being very satisfied)
+Please rating your satisfaction with this survey
